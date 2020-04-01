@@ -3,6 +3,9 @@ html, body {
 }
 body {
   margin: 0;
+  font-family: arial;
+  color: #606066;
+  font-size: 1em;
 }
 
 #webchat {
@@ -31,3 +34,45 @@ body {
   right: unset;
   transform: translate(-50%, 0);
 }
+
+.css-gtdio3 {
+  background-color: white;
+}
+
+.css-115fwte {
+  display: none;
+}
+
+.css-16qahhi {
+  display: none;
+}
+
+.css-eycyw2 {
+  display: none;
+}
+
+.css-1tdb3h1 webchat__imageAvatar__image,
+img {
+  display: none;
+}
+
+.webchat__initialsAvatar__initials {
+  display: none;
+}
+
+.css-yb0hx9 {
+  background-color: rgb(136, 137, 140) !important;
+  background-image: url('/images/centura.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ac-pushButton {
+  border: 1px solid blue;
+}
+
+button:hover {
+  background-color:#2087C8;
+  color: white;
+ }
