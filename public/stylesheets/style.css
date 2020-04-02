@@ -68,9 +68,12 @@ img {
   background-position: center;
 }
 
-.ac-pushButton, .webchat__bubble__content {
+.ac-pushButton, .from-user.bubble {
   border: 1px solid #008ad8;
   border-radius: 3px;
+  color: #008ad8;
+}
+.from-user.bubble p {
   color: #008ad8;
 }
 
