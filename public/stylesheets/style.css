@@ -68,11 +68,13 @@ img {
   background-position: center;
 }
 
-.ac-pushButton {
-  border: 1px solid blue;
+.ac-pushButton, .webchat__bubble__content {
+  border: 1px solid #008ad8;
+  border-radius: 3px;
+  color: #008ad8;
 }
 
-button:hover {
-  background-color:#2087C8;
-  color: white;
+button:hover, button:focus {
+  background-color:#008ad8 !important;
+  color: white !important;
  }
