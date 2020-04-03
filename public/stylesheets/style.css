@@ -60,11 +60,11 @@ img {
   display: none;
 }
 
-.webchat__defaultAvatar--fromUser::after {
+.webchat__stackedLayout--fromUser::after {
   content: "You";
   font-weight: bold;
-  display: block;
   margin-top: 13px;
+  display: inline-block;
 }
 
 .css-yb0hx9 {
