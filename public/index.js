@@ -158,14 +158,14 @@ function adaptiveCardsOption(event) {
 }
 
 function grayButton(button) {
-    button.style.backgroundColor = "#008ad8";
-    button.style.color = "#ffffff";
+    button.style.backgroundColor = "#00ced1";
+    button.style.color = "#606066";
     button.height = "37px";
 }
 
 function blueButton(button) {
-    button.style.backgroundColor = "#00ced1";
-    button.style.color = "#606066";
+    button.style.backgroundColor = "#008ad8";
+    button.style.color = "#ffffff";
     button.height = "37px";
 }
 
@@ -204,7 +204,7 @@ function disableParentButtons(children, targetButton) {
                 }, 50);
                 children[i].removeEventListener("click", selectOption);
                 children[i].style.outline = "none";
-                children[i].style.cursor = "default";
+                children[i].style.cursor = "not-allowed";
             }
         }
     }
