@@ -56,8 +56,13 @@ img {
   display: none;
 }
 
-.webchat__initialsAvatar__initials {
+.webchat__initialsAvatar__initials, .webchat__defaultAvatar--fromUser {
   display: none;
+}
+
+.webchat__stackedLayout__avatar::after {
+  content: "You";
+  font-weight: bold;
 }
 
 .css-yb0hx9 {
