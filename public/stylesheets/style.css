@@ -84,7 +84,7 @@ img {
   color: #008ad8;
 }
 
-button:hover, button:focus {
+button:hover {
   background-color:#008ad8 !important;
   color: white !important;
  }
