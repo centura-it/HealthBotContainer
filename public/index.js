@@ -158,7 +158,7 @@ function adaptiveCardsOption(event) {
 }
 
 function grayButton(button) {
-    button.style.backgroundColor = "#00ced1";
+    button.style.backgroundColor = "#d9d9d9";
     button.style.color = "#606066";
     button.height = "37px";
 }
@@ -241,7 +241,7 @@ function disableButtons(targetButton) {
             allChildren[i].onclick = "null";
             allChildren[i].removeEventListener("click", selectOption);
             allChildren[i].style.outline = "none";
-            allChildren[i].style.cursor = "default";
+            allChildren[i].style.cursor = "not-allowed";
         }
     }
 }
