@@ -80,7 +80,7 @@
         "listStyle": 3,
         "next": "65f64014720a-1f60382b741d6ada-408c"
       },
-      "text": "In Colorado due to widespread COVID-19 cases, it is possible if you have symptoms that you may have had contact with a COVID-19 positive patient. \r\n\r\nAre you experiencing any of the following symptoms? \r\n\r\n- Fever\r\n- Cough\r\n- Runny nose\r\n- Sore throat\r\n- Shortness of breath\r\n- GI symptoms such as nausea or diarrhea",
+      "text": "Due to widespread COVID-19 community spread, if you have symptoms it is possible that you may have the virus. Answer these questions to assess your situation and see suggested next steps. \r\n\r\nAre you experiencing any of the following symptoms? \r\n\r\n- Fever\r\n- Cough\r\n- Runny nose\r\n- Sore throat\r\n- Shortness of breath\r\n- GI symptoms such as nausea or diarrhea",
       "variable": "symptoms",
       "stringId": "stringId_95026aee067c03b8",
       "choiceType": "choice"
