@@ -3,6 +3,9 @@ html, body {
 }
 body {
   margin: 0;
+  font-family: arial;
+  color: #606066;
+  font-size: 1em;
 }
 
 #webchat {
@@ -31,3 +34,57 @@ body {
   right: unset;
   transform: translate(-50%, 0);
 }
+
+.css-gtdio3 {
+  background-color: white;
+}
+
+.css-115fwte {
+  display: none;
+}
+
+.css-16qahhi {
+  display: none;
+}
+
+.css-eycyw2 {
+  display: none;
+}
+
+.css-1tdb3h1 webchat__imageAvatar__image,
+img {
+  display: none;
+}
+
+.webchat__initialsAvatar__initials, .webchat__defaultAvatar--fromUser {
+  display: none;
+}
+
+.webchat__stackedLayout--fromUser .webchat__stackedLayout__avatar::after {
+  content: "You";
+  font-weight: bold;
+  margin-top: 13px;
+  display: block;
+}
+
+.css-yb0hx9 {
+  background-color: rgb(136, 137, 140) !important;
+  background-image: url('/images/centura.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ac-pushButton, .from-user.bubble {
+  border: 1px solid #008ad8;
+  border-radius: 3px;
+  color: #008ad8;
+}
+.from-user.bubble p {
+  color: #008ad8;
+}
+
+button:not(.old-button):hover {
+  background-color:#008ad8 !important;
+  color: white !important;
+ }
