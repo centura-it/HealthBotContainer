@@ -7,11 +7,11 @@
       "designer": {
         "xLocation": 280,
         "yLocation": 20,
-        "next": "3410c654716a-0740c9c75359f7d5-b0ca"
+        "next": "7f8376d6f206-6a9db1519cabdeb9-903c"
       },
       "text": "Welcome, Centura Health has a Coronavirus Assessment Tool available to help guide you to the right level of care.\r\nIf you’re experiencing a life- or limb-threatening emergency, call 911. An emergency would be if you are short of breath, are having difficulty breathing, have persistent chest pain, blue lips, new confusion or you are unable to arouse the person who is sick.\r\nThis is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a medical professional for serious symptoms or emergencies.\r\n",
       "stringId": "stringId_16f852e50d202222",
-      "label": "Welcome"
+      "label": "Welcome (1)"
     },
     {
       "id": "bf7990cf190b-5bf1facf9a9d366d-dc75",
@@ -22,19 +22,20 @@
         "yLocation": 440,
         "next": "cf6d359670b6-55e294a23443e1fd-1a30"
       },
-      "targetStepId": "eb04dde26e43-7d06cf4c31f7ce8a-9bc7"
+      "targetStepId": "eb04dde26e43-7d06cf4c31f7ce8a-9bc7",
+      "label": "Branch (8)"
     },
     {
       "id": "fba9621e2bfb-7700e8c19513384a-0e4a",
       "type": "statement",
       "designer": {
-        "xLocation": 366,
-        "yLocation": 820,
+        "xLocation": 414,
+        "yLocation": 580,
         "next": "bd714cc1fa0f-57b60cd734aa0943-054d"
       },
       "text": "**We recommend the following resources:**\r\n\r\n- [CDC: Centers for Disease Control and Prevention](https://www.cdc.gov/coronavirus/2019-ncov/index.html)\r\n- [Information for Pregnancy and Infants](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/pregnancy-faq.html)\r\n- [Breastfeeding Recommendations](https://www.cdc.gov/breastfeeding/faq/index.htm)\r\n- [Watch “Understanding COVID-19 and how to stay safe” video](https://my-emmi.com/content/redirect?client_id=CENTURA_COVID&program_id=31425)\r\n- [Colorado Department of Health & Public Environment](https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus)\r\n- [Kansas Department of Health & Environment](http://www.kdheks.gov/coronavirus/)\r\n",
       "stringId": "stringId_09c800578d032c5d",
-      "label": "Info links"
+      "label": "No Risk Info (15)"
     },
     {
       "id": "3410c654716a-0740c9c75359f7d5-b0ca",
@@ -49,7 +50,8 @@
       "text": "When you agree to our [Disclaimer](https://www.centura.org/disclaimer) and our [Privacy Policy](https://www.centura.org/website-privacy-and-security-policy) we can continue.",
       "variable": "disclaimer",
       "stringId": "stringId_a73869fe8b8aaf56",
-      "choiceType": "choice"
+      "choiceType": "choice",
+      "label": "Disclaimer (2)"
     },
     {
       "id": "2ef5bbfc6e68-237fc78189c3b54c-9a4d",
@@ -68,7 +70,8 @@
           "targetStepId": "fba9621e2bfb-7700e8c19513384a-0e4a"
         }
       ],
-      "condition": "scenario.disclaimer.index"
+      "condition": "scenario.disclaimer.index",
+      "label": "Switch (3)"
     },
     {
       "id": "56e97749454f-171773d08164ba81-3d92",
@@ -83,7 +86,8 @@
       "text": "Due to widespread COVID-19 community spread, if you have symptoms it is possible that you may have the virus. Answer these questions to assess your situation and see suggested next steps. \r\n\r\nAre you experiencing any of the following symptoms? \r\n\r\n- Fever\r\n- Cough\r\n- Runny nose\r\n- Sore throat\r\n- Shortness of breath\r\n- GI symptoms such as nausea or diarrhea",
       "variable": "symptoms",
       "stringId": "stringId_95026aee067c03b8",
-      "choiceType": "choice"
+      "choiceType": "choice",
+      "label": "Symptoms (4)"
     },
     {
       "id": "8d9be6a5cb2c-0c3e2f5c32e93555-7c97",
@@ -98,7 +102,8 @@
       "text": "Are Your Symptoms:",
       "variable": "severity",
       "stringId": "stringId_2678c8aedf51a416",
-      "choiceType": "choice"
+      "choiceType": "choice",
+      "label": "Severity (6)"
     },
     {
       "id": "48bcd0841b39-1e1c079621f2c0d6-cae3",
@@ -113,7 +118,8 @@
       "text": "Do any of these apply to you?\r\n\r\n- You are 60 years old or older\r\n- You have a chronic disease (for example, heart disease, chronic lung disease, kidney disease, liver disease or diabetes)\r\n- You are pregnant or could be pregnant\r\n- There is any reason you may have a weakened immune system (for example, from cancer, medications that can lower your immune system, transplant, HIV)\r\n",
       "variable": "condition",
       "stringId": "stringId_c4836c5229943476",
-      "choiceType": "choice"
+      "choiceType": "choice",
+      "label": "Condition (7)"
     },
     {
       "id": "65f64014720a-1f60382b741d6ada-408c",
@@ -132,7 +138,8 @@
           "targetStepId": "48bcd0841b39-1e1c079621f2c0d6-cae3"
         }
       ],
-      "condition": "scenario.symptoms.index"
+      "condition": "scenario.symptoms.index",
+      "label": "Switch (5)"
     },
     {
       "id": "cf6d359670b6-55e294a23443e1fd-1a30",
@@ -143,29 +150,32 @@
         "yLocation": 520,
         "next": "3972171ef84f-02858858900108ae-d5a5"
       },
-      "targetStepId": "b1cec8dacad5-8e0fdefc6ba44951-06a3"
+      "targetStepId": "b1cec8dacad5-8e0fdefc6ba44951-06a3",
+      "label": "Branch (9)"
     },
     {
       "id": "eb04dde26e43-7d06cf4c31f7ce8a-9bc7",
       "type": "statement",
       "designer": {
         "xLocation": 300,
-        "yLocation": 571,
+        "yLocation": 573,
         "next": "fba9621e2bfb-7700e8c19513384a-0e4a"
       },
       "text": "You do not require any immediate care however if you begin experiencing symptoms, you can come back to this self-assessment or contact the COVID-19 nurse triage line at **888-883-9400**.",
-      "stringId": "stringId_ccaf6ef73a2c47a8"
+      "stringId": "stringId_ccaf6ef73a2c47a8",
+      "label": "No Risk (14)"
     },
     {
       "id": "b1cec8dacad5-8e0fdefc6ba44951-06a3",
       "type": "statement",
       "designer": {
-        "xLocation": 223,
+        "xLocation": 220,
         "yLocation": 634,
-        "next": "fba9621e2bfb-7700e8c19513384a-0e4a"
+        "next": "7d6d4785e8ab-f67b1ef090eab0e6-42c7"
       },
       "text": "You do not require any immediate care however if you begin experiencing symptoms, please contact our COVID-19 nurse triage line Centura Health at **888-883-9400**.",
-      "stringId": "stringId_f9087aae3775fb6e"
+      "stringId": "stringId_f9087aae3775fb6e",
+      "label": "No Risk (17)"
     },
     {
       "id": "0a3f5a767810-94e5decece04929c-585c",
@@ -173,10 +183,11 @@
       "designer": {
         "xLocation": 200,
         "yLocation": 700,
-        "next": "bd714cc1fa0f-57b60cd734aa0943-054d"
+        "next": "ef3f3d6bcbf7-7be1051640c0e164-7584"
       },
       "text": "**You may be at risk.**\r\n\r\nPlease call our COVID-19 nurse triage line at **888-883-9400** and one of our nurses can help you determine the most appropriate care options given your symptoms.​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n ",
-      "stringId": "stringId_dfb65c72c93775f1"
+      "stringId": "stringId_dfb65c72c93775f1",
+      "label": "High Risk (20)"
     },
     {
       "id": "3972171ef84f-02858858900108ae-d5a5",
@@ -187,7 +198,8 @@
         "yLocation": 620,
         "next": "f732fc53704a-2572a225994a27e9-e73e"
       },
-      "targetStepId": "0a3f5a767810-94e5decece04929c-585c"
+      "targetStepId": "0a3f5a767810-94e5decece04929c-585c",
+      "label": "Branch (10)"
     },
     {
       "id": "91ed54dcadc0-e20b3144421b6dd2-75b5",
@@ -195,10 +207,11 @@
       "designer": {
         "xLocation": 180,
         "yLocation": 754,
-        "next": "bd714cc1fa0f-57b60cd734aa0943-054d"
+        "next": "099b2bf88661-a201d2290f4a831a-8828"
       },
       "text": "You’re not considered high risk but since you’re not feeling well please call our COVID-19 nurse triage line at **888-883-9400** where one of our nurses can help you determine the most appropriate care options given your symptoms. ",
-      "stringId": "stringId_467bc3ec58ba8648"
+      "stringId": "stringId_467bc3ec58ba8648",
+      "label": "Medium Risk (22)"
     },
     {
       "id": "f732fc53704a-2572a225994a27e9-e73e",
@@ -209,7 +222,8 @@
         "yLocation": 710,
         "next": "2622c8dc4264-cdb3017bb125f9ab-d1fd"
       },
-      "targetStepId": "91ed54dcadc0-e20b3144421b6dd2-75b5"
+      "targetStepId": "91ed54dcadc0-e20b3144421b6dd2-75b5",
+      "label": "Branch (11)"
     },
     {
       "id": "2622c8dc4264-cdb3017bb125f9ab-d1fd",
@@ -220,7 +234,8 @@
         "yLocation": 800,
         "next": "7d4579b5c873-9966f6055cf05092-93be"
       },
-      "targetStepId": "b9224ebe5839-f467f020cc5a6ec2-f184"
+      "targetStepId": "b9224ebe5839-f467f020cc5a6ec2-f184",
+      "label": "Branch (12)"
     },
     {
       "id": "b9224ebe5839-f467f020cc5a6ec2-f184",
@@ -228,10 +243,11 @@
       "designer": {
         "xLocation": 198,
         "yLocation": 823,
-        "next": "bd714cc1fa0f-57b60cd734aa0943-054d"
+        "next": "f6615c6ce389-4a0724ceb73eabe7-55ec"
       },
       "text": "**You are considered high risk.**\r\n\r\nPlease call our COVID-19 nurse triage line at **888-883-9400** and a nurse can help you determine the most appropriate care options given your symptoms.\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n",
-      "stringId": "stringId_52b515e61fa4efc0"
+      "stringId": "stringId_52b515e61fa4efc0",
+      "label": "High Risk (24)"
     },
     {
       "id": "7d4579b5c873-9966f6055cf05092-93be",
@@ -241,7 +257,8 @@
         "xLocation": 120,
         "yLocation": 889
       },
-      "targetStepId": "e656b52f40d7-b2f975f4600b751d-384e"
+      "targetStepId": "e656b52f40d7-b2f975f4600b751d-384e",
+      "label": "Branch (13)"
     },
     {
       "id": "e656b52f40d7-b2f975f4600b751d-384e",
@@ -249,20 +266,102 @@
       "designer": {
         "xLocation": 248,
         "yLocation": 905,
-        "next": "bd714cc1fa0f-57b60cd734aa0943-054d"
+        "next": "1efdbf5240d9-34bc02ae6864186a-6235"
       },
-      "text": "**You may be at risk.**\r\n\r\nPlease call our COVID-19 nurse triage line at **888-883-9400** and a nurse can help you determine the most appropriate care options given your symptoms.\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n",
-      "stringId": "stringId_37ac3e9f0b041041"
+      "text": "**You may be at risk.**\r\n\r\nPlease call our COVID-19 nurse triage line at **888-883-9400** and a nurse can help you determine the most appropriate care options given your symptoms.\r\n\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\r\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+      "stringId": "stringId_37ac3e9f0b041041",
+      "label": "High Risk (26)"
     },
     {
       "id": "bd714cc1fa0f-57b60cd734aa0943-054d",
       "type": "statement",
       "designer": {
-        "xLocation": 573,
-        "yLocation": 806
+        "xLocation": 512,
+        "yLocation": 600
       },
-      "text": "_Thank you for utilizing the screening tool. You have completed the screening and this chat has ended._",
-      "stringId": "stringId_fcb8bd60480be060"
+      "text": "${msg_ty}",
+      "stringId": "stringId_fcb8bd60480be060",
+      "label": "No Risk (1)"
+    },
+    {
+      "id": "ef3f3d6bcbf7-7be1051640c0e164-7584",
+      "type": "statement",
+      "designer": {
+        "xLocation": 340,
+        "yLocation": 712
+      },
+      "text": "${msg_ty}",
+      "stringId": "stringId_fcb8bd60480be060",
+      "label": "High Risk (1)"
+    },
+    {
+      "id": "f6615c6ce389-4a0724ceb73eabe7-55ec",
+      "type": "statement",
+      "designer": {
+        "xLocation": 380,
+        "yLocation": 832
+      },
+      "text": "${msg_ty}",
+      "stringId": "stringId_fcb8bd60480be060",
+      "label": "Very High Risk (1)"
+    },
+    {
+      "id": "099b2bf88661-a201d2290f4a831a-8828",
+      "type": "statement",
+      "designer": {
+        "xLocation": 320,
+        "yLocation": 770
+      },
+      "text": "${msg_ty}",
+      "stringId": "stringId_fcb8bd60480be060",
+      "label": "Medium Risk (1)"
+    },
+    {
+      "id": "1efdbf5240d9-34bc02ae6864186a-6235",
+      "type": "statement",
+      "designer": {
+        "xLocation": 430,
+        "yLocation": 880
+      },
+      "text": "${msg_ty}",
+      "stringId": "stringId_fcb8bd60480be060",
+      "label": "Very High Risk (2)"
+    },
+    {
+      "id": "7d6d4785e8ab-f67b1ef090eab0e6-42c7",
+      "type": "statement",
+      "designer": {
+        "xLocation": 346,
+        "yLocation": 650,
+        "next": "8486afc8a6d0-c14d725b45709036-e13c"
+      },
+      "text": "**We recommend the following resources:**\r\n\r\n- [CDC: Centers for Disease Control and Prevention](https://www.cdc.gov/coronavirus/2019-ncov/index.html)\r\n- [Information for Pregnancy and Infants](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/pregnancy-faq.html)\r\n- [Breastfeeding Recommendations](https://www.cdc.gov/breastfeeding/faq/index.htm)\r\n- [Watch “Understanding COVID-19 and how to stay safe” video](https://my-emmi.com/content/redirect?client_id=CENTURA_COVID&program_id=31425)\r\n- [Colorado Department of Health & Public Environment](https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus)\r\n- [Kansas Department of Health & Environment](http://www.kdheks.gov/coronavirus/)\r\n",
+      "stringId": "stringId_09c800578d032c5d",
+      "label": "No Risk Info (18)"
+    },
+    {
+      "id": "8486afc8a6d0-c14d725b45709036-e13c",
+      "type": "statement",
+      "designer": {
+        "xLocation": 474,
+        "yLocation": 652
+      },
+      "text": "${msg_ty}",
+      "stringId": "stringId_fcb8bd60480be060",
+      "label": "No Risk (2)"
+    },
+    {
+      "id": "7f8376d6f206-6a9db1519cabdeb9-903c",
+      "type": "assignVariable",
+      "designer": {
+        "xLocation": 40,
+        "yLocation": 40,
+        "next": "3410c654716a-0740c9c75359f7d5-b0ca"
+      },
+      "scope": "scenario",
+      "operation": "set",
+      "value": "\"_Thank you for utilizing the screening tool. You have completed the screening and this chat has ended._\"",
+      "variable": "msg_ty"
     }
   ],
   "interrupting": false,
